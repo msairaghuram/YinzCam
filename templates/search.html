@@ -1,0 +1,25 @@
+<html>
+<body>
+
+<!--This is the heading of the page--> 
+<h2>Login</h2>
+
+<!--This creates a box to accept the tags that need to be searched by the user-->
+<form method="POST" action="/messagelist">
+  <label for="searchtag">Search Messages:</label><br>
+  <input type="text" name="searchtag" id=""><br><br>
+  <br>
+  <br>
+  <input type="submit" value="Search">
+</form>
+
+<!--This is used to display the list of messages to the user-->
+{% for msg in finalList %}
+<textarea name="textarea1" id="" cols="30" rows="10">
+    {{msg}}
+</textarea>
+<br><br>
+{% endfor %}
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+<body>
+
+<!--This is the heading of the page-->
+<h2>Login</h2>
+
+<!--This form has two text areas which accept the message and the tags associated with them from the user-->
+<form method="POST" action="/updatemsg">
+  <label for="message">Post Message:</label><br>
+  <textarea name="message" id="" cols="30" rows="10"></textarea><br><br>
+  <label for="tags">Tags:</label><br>
+  <textarea name="tags" id="" cols="30" rows="10"></textarea>
+  <br>
+  <br>
+  <input type="submit" value="Post">
+</form>
+
+<!--This is a search button that lets the user to get redirected to the search page where he can perform the search operations-->
+<form action="/search">
+    <input type="submit" value="Search">
+</form>
+
+</body>
+</html>
